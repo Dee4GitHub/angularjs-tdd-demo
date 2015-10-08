@@ -18,7 +18,9 @@
   "homepage": "https://github.com/deepak4u/angularjs-tdd-demo#readme",
   "dependencies": {
     "browser-sync": "^2.9.6",
+    "express": "^4.13.3",
     "gulp": "^3.9.0",
+    "gulp-live-server": "0.0.29",
     "karma": "^0.13.10",
     "karma-mocha": "^0.2.0",
     "karma-mocha-reporter": "^1.1.1",
