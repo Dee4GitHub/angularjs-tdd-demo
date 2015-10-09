@@ -12,3 +12,7 @@ Deepak Papanna
 
 Notes:
 -------
+I have made the folder names to be shorter as Windows doesn't like longer folder names when I am copying files across from previous lesson to the next lesson
+
+For example:
+0303_Testing Angular Controllers => 0303_TestingAngularCtrollers
