@@ -4,7 +4,7 @@ This folder contains the latest code (as of 8th October 2015) for the Daniel Ste
 
 Further this folder contains code for the 3rd Chapter Testing Angular Applications - Lesson 01 Testing Services With Inject and Module. 
 
-Please feel free to dwonload and use the code for your learning or other responsible use.
+Please feel free to download and use the code for your learning or other responsible use.
 
 Regards, 
 
