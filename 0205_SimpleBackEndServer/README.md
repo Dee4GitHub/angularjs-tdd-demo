@@ -4,7 +4,7 @@ This folder contains the latest code (as of 8th October 2015) for the Daniel Ste
 
 Further this folder contains code for the 2nd Chapter Scaffolding a testable Angular App - Lesson 05 Implementing a Simple Back End With Express 
 
-Please feel free to dwonload and use the code for your learning or other responsible use.
+Please feel free to download and use the code for your learning or other responsible use.
 
 Regards, 
 
