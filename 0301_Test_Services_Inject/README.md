@@ -14,5 +14,7 @@ Notes:
 -------
 
 1. I have commented out the failing test in the main.spec.js. If you like to see the output of the failing test, you would need to uncomment the following line of code in the main.spec.js
-    (line 13)
+    
+(line 13)
+
     //expect(contactService.contacts).to.be.an('number');
