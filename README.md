@@ -9,7 +9,7 @@ Hence 0202_App_Setup is the first folder you see as opposed to starting from 010
 
 I have tried to use the latest version of npm and bower packages for each lesson shown in the original video by Daniel Stern.
 
-Please feel free to dwonload folders and use the code contained in them for your learning or other responsible use.
+Please feel free to download folders and use the code contained in them for your learning or other responsible use.
 
 
 Regards, 
