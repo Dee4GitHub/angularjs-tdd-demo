@@ -27,6 +27,7 @@ describe("The Address Book App", function() {
         });
     });
 
+    //controller tests
     describe("the contact controller", function(){
         beforeEach(function(){
             module('AddressBook');
@@ -43,6 +44,42 @@ describe("The Address Book App", function() {
            assert.isArray($scope.contacts);
         });
     });
+
+    //filter tests
+    describe("the proper filter", function(){
+        beforeEach(function(){
+            module('AddressBook');
+            inject(function($injector){
+                proper = $injector.get("$filter")("proper");
+            });
+        });
+
+        //test - strings
+        it("should proper case a string",function(){
+            expect(proper("ned stark")).to.equal("Ned Stark");
+            ////failing test as it should
+            //expect(proper("cerci lanester")).to.equal("Jamie Lanester");
+            //falling test above corrected to pass
+            expect(proper("cerci lanester")).to.equal("Cerci Lanester");
+        });
+
+        //test - number
+        it("should take a number", function(){
+            expect(proper(42)).to.equal("42");
+        });
+
+        it("should throw an error on an incompatible type",function(){
+            assert.throws(function(){
+                //expected to throw an error as per the filter handling
+                proper(undefined);
+
+                //output on the browser will throw an error when string is passed directly
+                //in order for this error to show, you would need to comment the "proper(undefined);" line above
+                //and uncomment the line below
+               //proper("Hello");
+            })
+        })
+    })
 });
 
 
