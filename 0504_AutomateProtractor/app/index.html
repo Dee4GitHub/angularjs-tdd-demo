@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="bower_components/angular/angular.js"></script>
+    <title>Angular Test Driven Development Demo</title>
+</head>
+<body ng-app="AddressBook">
+Hello World!
+<div ng-controller=contactController>
+    <div ng-repeat="contact in contacts">
+        {{contact.name}}
+        <avatar name=contact.name></avatar>
+    </div>
+</div>
+<script src=main.js></script>
+</body>
+</html>
