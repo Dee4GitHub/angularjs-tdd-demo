@@ -12,6 +12,7 @@ I have tried to use the latest version of npm and bower packages for each lesson
 Please feel free to download folders and use the code contained in them for your learning or other responsible use.
 
 
-Regards, 
+Regards,
+
 Deepak Papanna
 
