@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="bower_components/angular/angular.js"></script>
+    <title>Angular Test Driven Development Demo</title>
+</head>
+<body ng-app="AddressBook">
+<h1>Contactical</h1>
+<h2>The Ironclad Address Book</h2>
+<div ng-controller=contactController>
+    <div ng-repeat="contact in contacts">
+        <h4>
+            <span class="contact-name">
+                {{contact.name}}
+            </span>
+            <avatar name=contact.name></avatar>
+        </h4>
+        <p>
+            {{contact.occupation}}
+        </p>
+        <p>
+            <a href="mailto:{{contact.email}}">
+                {{contact.email}}
+            </a>
+        </p>
+    </div>
+</div>
+<div ng-controller=AddContact>
+    <form ng-submit="AddContact()">
+        <h3>Add Contact</h3>
+        <label>
+            Name (Req'd)
+            <input required type="text" ng-model="contact.name"/>
+        </label>
+        <label>
+            Age
+            <input type="number" ng-model="contact.age"/>
+        </label>
+        <label>
+           Occupation
+            <input type="text" ng-model="contact.occupation"/>
+        </label>
+        <label>
+            Email (Req'd)
+            <input required type="email" ng-model="contact.email"/>
+        </label>
+        <button type="submit">Add New Contact</button>
+        <div class="warning" ng-if=errorMessage>Please check the above information and try again!</div>
+    </form>
+</div>
+<script src=main.js></script>
+</body>
+</html>
